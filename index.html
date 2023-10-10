@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seus Contatos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Contatos</h1>
+        <img src="img/telefone.png" alt="telefone">
+    </header>
+    <form>
+        <div>
+            <input type="text" id="nome" placeholder="insira o nome do contato">
+            <input type="tel" id="telefone" placeholder="insira o telefone do contato">
+            <button type="submit">Adicionar</button>
+        </div>
+        
+    </form>
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Numero de telefone</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>---</td>
+                    <td>---</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>total de contatos: 0</p>
+    </div>
+
+    <script type="text/javascript" src="./script.js"></script>         
+</body>
+</html>
