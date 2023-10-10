@@ -10,7 +10,7 @@ let numeros = [];
 button.addEventListener('submit', function(e) {
     e.preventDefault();
     adicionaContato();
-    colocaContato();
+    
 });
 
 function adicionaContato() {
@@ -28,6 +28,11 @@ function adicionaContato() {
             linhas += linha;
             nomes.push(input_nome.value);
             numeros.push(input_tel.value);
+
+            let corpo = document.querySelector('tbody');
+            corpo.innerHTML = linhas;
+            total += 1;
+            numContatos.innerHTML = `total de contatos: ${total}`;
         }
 
     }
@@ -36,9 +41,4 @@ function adicionaContato() {
     input_tel.value = '';
 }
 
-function colocaContato() {
-    let corpo = document.querySelector('tbody');
-    corpo.innerHTML = linhas;
-    total += 1;
-    numContatos.innerHTML = `Total de contatos: ${total}`;
-}
+
