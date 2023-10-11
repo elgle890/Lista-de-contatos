@@ -19,7 +19,9 @@ function adicionaContato() {
 
     if (input_nome.value === '' || input_tel.value === '') {
         alert('Complete todos os dados!');
-    } else {
+    } else if (!/^\d+$/.test(input_tel.value)) {
+            alert('O campo de telefone só deve conter números.');
+        } else {
 
         if (numeros.includes(input_tel.value)) {
             alert('Número de telefone já existe!');
